@@ -1,0 +1,21 @@
+.btn {
+  background-color: #1c1c1c;
+  color: #e0dddd;
+  text-decoration: none;
+  padding: 0.75rem 1.2rem;
+  display: inline-block;
+  border-radius: 1.2rem;
+
+  &--yellow {
+    background-color: $mainYellow;
+    color: $mainBlack;
+  }
+
+  &--large {
+    padding: 0.85rem 1.9rem;
+
+    @mixin atSmall {
+      font-size: 1.25rem;
+    }
+  }
+}

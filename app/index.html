@@ -4,14 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700" rel="stylesheet" type="text/css" />
-    <title>Rafael Matera - Full Stack Javascript Developer</title>
+    <link rel="icon" href="assets/images/icons/rafael-matera-fav-icon.png" type="image/x-icon" />
+    <title>Rafael Matera - Full Stack Developer</title>
     <meta name="keywords" content="Developer, Javascript, React, Node JS, HTML, CSS, Webpack, Babel" />
     <meta name="description" content="Full Stack Javascript Developer especializado en crear soluciones web escalables y personalizadas." />
   </head>
   <body>
     <header>
-      <img src="assets/images/rafael-matera-profile-img.jpeg" />
-      <a href="#">Get in Touch</a>
+      <img src="assets/images/rafael-matera-profile-image.jpg" />
+      <a href="#" class="btn">Get in Touch</a>
       <nav>
         <ul>
           <li><a href="#about">About</a></li>
@@ -22,61 +23,90 @@
     </header>
 
     <div class="large-hero">
-      <img src="assets/images/hero--large.jpeg" />
-      <h1>Your project.</h1>
-      <h2>One step away.</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
-      <p><a href="#">Take the first step Today</a></p>
+      <picture>
+        <source srcset="assets/images/hero--large.jpg 1920w, assets/images/hero--large-hi-dpi.jpg 3840w" media="(min-width:1380px)" />
+        <source srcset="assets/images/hero--medium.jpg 1380w, assets/images/hero--medium-hi-dpi.jpg 2760w" media="(min-width:990px)" />
+        <source srcset="assets/images/hero--small.jpg 990w, assets/images/hero--small-hi-dpi.jpg 1980w" media="(min-width:640px)" />
+        <img class="large-hero__image" srcset="assets/images/hero--smaller.jpg 840w, assets/images/hero--smaller-hi-dpi.jpg 1490w" alt="Development project open in a laptop" />
+      </picture>
+      <div class="large-hero__text-content">
+        <div class="wrapper">
+          <h1 class="large-hero__title">RAFAEL MATERA.</h1>
+          <h2 class="large-hero__subtitle">FULLSTACK DEVELOPER.</h2>
+          <p class="large-hero__description">I'll help you transform your ideas into scalable and customized digital solutions.</p>
+          <p><a href="#" class="btn btn--yellow btn--large">Get Started Today</a></p>
+        </div>
+      </div>
     </div>
 
-    <div id="about">
-      <img src="assets/images/about.jpg" alt="Developer" />
-      <h2>Here&rsquo;s how I got started&hellip;</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <a href="#">quis nostrud exercitation</a> ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      <p>Duis aute irure dolor in <strong>reprehenderit in</strong> voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum velit esse cillum <strong>dolore eu fugiat.</strong></p>
+    <div id="about" class="page-section">
+      <div class="wrapper">
+        <div class="row row--gutters">
+          <div class="row__medium-4 row__b-margin-untill-medium">
+            <picture>
+              <source sizes="404px" srcset="assets/images/about.jpg 404w, assets/images/about-hi-dpi.jpg 808w" media="(min-width: 1025px)" />
+              <source sizes="382px" srcset="assets/images/about-portrait.jpg 382w, assets/images/about-portrait-hi-dpi.jpg 764w" media="(min-width: 768px)" />
+              <img class="page-section__rounded" srcset="assets/images/about-landscape.jpg 800w, assets/images/about-landscape-hi-dpi.jpg 1600w" alt="Developer" />
+            </picture>
+          </div>
+          <div class="row__medium-8">
+            <div class="generic-content-container">
+              <h2 class="headline headline--no-t-margin">Here&rsquo;s how I got started&hellip;</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <a href="#">quis nostrud exercitation</a> ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <p>Duis aute irure dolor in <strong>reprehenderit in</strong> voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum velit esse cillum <strong>dolore eu fugiat.</strong></p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <div id="services">
-      <img src="assets/images/icons/starts_icon.svg" />
-      <h2>Services</h2>
+    <div id="services" class="page-section page-section--black">
+      <div class="wrapper">
+        <img src="assets/images/icons/starts_icon.svg" />
+        <h2>Services</h2>
 
-      <img src="assets/images/icons/personal_icon.svg" />
-      <h3>Personal pages</h3>
-      <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum velit esse cillum <strong>dolore eu fugiat.</strong></p>
+        <img src="assets/images/icons/personal_icon.svg" />
+        <h3>Personal pages</h3>
+        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum velit esse cillum <strong>dolore eu fugiat.</strong></p>
 
-      <img src="assets/images/icons/blog_icon.svg" />
-      <h3>Static websites</h3>
-      <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum velit esse cillum <strong>dolore eu fugiat.</strong></p>
+        <img src="assets/images/icons/blog_icon.svg" />
+        <h3>Static websites</h3>
+        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum velit esse cillum <strong>dolore eu fugiat.</strong></p>
 
-      <img src="assets/images/icons/ecommerce_icon.svg" />
-      <h3>E-commerce development</h3>
-      <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum velit esse cillum <strong>dolore eu fugiat.</strong></p>
+        <img src="assets/images/icons/ecommerce_icon.svg" />
+        <h3>E-commerce development</h3>
+        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum velit esse cillum <strong>dolore eu fugiat.</strong></p>
 
-      <img src="assets/images/icons/system_icon.svg" />
-      <h3>Web apps</h3>
-      <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum velit esse cillum <strong>dolore eu fugiat.</strong></p>
+        <img src="assets/images/icons/system_icon.svg" />
+        <h3>Web apps</h3>
+        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum velit esse cillum <strong>dolore eu fugiat.</strong></p>
+      </div>
     </div>
 
-    <div id="pricing-guide">
-      <img src="assets/images/icons/pricing_icon.svg" />
-      <h2>Pricing Guide</h2>
+    <div id="pricing-guide" class="page-section">
+      <div class="wrapper">
+        <img src="assets/images/icons/pricing_icon.svg" />
+        <h2>Pricing Guide</h2>
 
-      <h3>Jane Doe</h3>
-      <h3>9 Time Escaper</h3>
-      <p>&ldquo;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&rdquo;</p>
+        <h3>Jane Doe</h3>
+        <h3>9 Time Escaper</h3>
+        <p>&ldquo;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&rdquo;</p>
 
-      <h3>John Smith</h3>
-      <h3>4 Time Escaper</h3>
-      <p>&ldquo;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur.&rdquo;</p>
+        <h3>John Smith</h3>
+        <h3>4 Time Escaper</h3>
+        <p>&ldquo;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur.&rdquo;</p>
 
-      <h3>Cat McKitty</h3>
-      <h3>6 Time Escaper</h3>
-      <p>&ldquo;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.&rdquo;</p>
+        <h3>Cat McKitty</h3>
+        <h3>6 Time Escaper</h3>
+        <p>&ldquo;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.&rdquo;</p>
+      </div>
     </div>
 
     <footer>
-      <p>Copyright &copy; 2025 Ing. Rafael Matera. All rights reserved. <a href="#">Get in Touch</a></p>
+      <div class="wrapper">
+        <p>Copyright &copy; 2025 Ing. Rafael Matera. All rights reserved. <a href="#" class="btn btn--yellow">Get in Touch</a></p>
+      </div>
     </footer>
     <script src="bundled.js"></script>
   </body>

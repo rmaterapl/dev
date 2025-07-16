@@ -1,0 +1,17 @@
+.page-section {
+  padding: 2rem 0;
+
+  @mixin atMedium {
+    padding: 4.5rem 0;
+  }
+
+  &--black {
+    background-color: $mainBlack;
+    color: $mainWhite;
+  }
+
+  &__rounded {
+    border-radius: 1.2rem;
+    width: 100%;
+  }
+}
