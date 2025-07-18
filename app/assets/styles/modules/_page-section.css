@@ -14,4 +14,13 @@
     border-radius: 1.2rem;
     width: 100%;
   }
+
+  &--pricing {
+    background-color: $mainWhite;
+
+    @mixin atMedium {
+      background: url("./assets/images/pricing-guide-bg.jpg") top center no-repeat;
+      background-size: cover;
+    }
+  }
 }
