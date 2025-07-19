@@ -16,7 +16,7 @@
     }
   }
 
-  @mixin atSmall {
+  @mixin atMedium {
     text-align: left;
   }
 }
