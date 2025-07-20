@@ -2,7 +2,6 @@ import "../styles/styles.css"
 import MobileMenu from "./modules/MobileMenu"
 import ReavealOnScroll from "./modules/RevealOnScroll"
 import Header from "./modules/Header"
-import { forEach } from "lodash"
 
 new Header()
 new MobileMenu()
