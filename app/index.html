@@ -24,9 +24,9 @@
           </div>
           <nav class="primary-nav primary-nav--pull-right">
             <ul>
-              <li><a href="#about">About</a></li>
-              <li><a href="#services">Services</a></li>
-              <li><a href="#pricing-guide">Pricing Guide</a></li>
+              <li><a id="about-link" href="#about">About</a></li>
+              <li><a id="services-link" href="#services">Services</a></li>
+              <li><a id="pricing-link" href="#pricing-guide">Pricing Guide</a></li>
             </ul>
           </nav>
         </div>
@@ -50,7 +50,7 @@
       </div>
     </div>
 
-    <div id="about" class="page-section">
+    <div id="about" class="page-section" data-matching-link="#about-link">
       <div class="wrapper">
         <div class="row row--gutters">
           <div class="row__medium-4 row__b-margin-untill-medium">
@@ -72,7 +72,7 @@
       </div>
     </div>
 
-    <div id="services" class="page-section page-section--black">
+    <div id="services" class="page-section page-section--black" data-matching-link="#services-link">
       <div class="wrapper">
         <h2 class="section-title section-title--margin-t-0"><img class="section-title__icon icon" src="assets/images/icons/starts_icon.svg" />Services</h2>
         <div class="row row--gutters-large generic-content-container">
@@ -104,7 +104,7 @@
       </div>
     </div>
 
-    <div id="pricing-guide" class="page-section page-section--pricing">
+    <div id="pricing-guide" class="page-section page-section--pricing" data-matching-link="#pricing-link">
       <div class="wrapper">
         <h2 class="section-title section-title--margin-t-0"><img class="section-title__icon icon icon--black" src="assets/images/icons/pricing_icon.svg" />Pricing&nbsp;<b>Guide</b></h2>
         <div class="row row--gutters-small row--equal-height-at-medium generic-content-container">
