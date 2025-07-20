@@ -31,10 +31,8 @@
     display: block;
     padding: 12px 0;
 
-    @mixin atSmall {
-      &.is-current-link {
-        color: $mainYellow;
-      }
+    &.is-current-link {
+      color: $mainYellow;
     }
   }
 }
