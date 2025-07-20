@@ -18,16 +18,16 @@
 
   &__logo {
     position: absolute;
-    width: 6rem;
+    width: 7rem;
     top: 0;
 
     @mixin atSmall {
-      width: 8rem;
+      width: 8.5rem;
     }
 
     img {
       border-radius: 0 0 20px 20px;
-      box-shadow: rgba(255, 255, 255, 0.4) 2px 3px 10px;
+      box-shadow: rgba(255, 255, 255, 0.1) 4px 6px 12px;
     }
   }
 

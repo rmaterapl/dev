@@ -1,0 +1,19 @@
+.social-icons {
+  text-align: center;
+
+  &__icon {
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    margin: 0 5px 5px 5px;
+    transition: all 0.3s ease-out;
+
+    img {
+      width: 100%;
+    }
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}

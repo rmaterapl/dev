@@ -21,6 +21,10 @@
     padding-right: 10rem;
   }
 
+  &--narrow {
+    max-width: 1300px;
+  }
+
   &--wide {
     max-width: 2000px;
   }
