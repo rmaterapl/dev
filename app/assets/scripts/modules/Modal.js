@@ -42,7 +42,7 @@ class Modal {
 
           <div class="social-icons">
             <a href="mailto:rmaterapay@gmail.com" class="social-icons__icon"><img src="assets/images/icons/email-icon.svg" alt="Email" /></a>
-            <a href="#" class="social-icons__icon"><img src="assets/images/icons/whatsapp-icon.svg" alt="WhatsApp" /></a>
+            <a href="https://wa.me/50660211667" target="_blank" class="social-icons__icon"><img src="assets/images/icons/whatsapp-icon.svg" alt="WhatsApp" /></a>
           </div>
         </div>
         <div class="modal__close">X</div>
