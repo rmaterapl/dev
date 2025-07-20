@@ -18,11 +18,11 @@
 
   &__logo {
     position: absolute;
-    width: 7rem;
+    width: 6rem;
     top: 0;
 
     @mixin atSmall {
-      width: 8.5rem;
+      width: 8rem;
     }
 
     img {
