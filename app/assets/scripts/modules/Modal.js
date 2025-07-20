@@ -37,7 +37,7 @@ class Modal {
             <img src="assets/images/icons/contact-icon.svg" class="section-title__icon icon" /> Get in <strong>Touch</strong>
           </h2>
           <div class="wrapper wrapper--narrow">
-            <p class="modal__description">You can contact me via email or WhatsApp, and I’ll get back to you as soon as possible. Taking that first step is important to start shaping your idea or project into something real. Once I receive your message, I’ll reach out to schedule a free remote meeting where we can discuss your goals in detail. This will allow me to understand your needs and provide you with a personalized quote.</p>
+            <p class="modal__description">You can contact me via email or WhatsApp, and I’ll get back to you as soon as possible. Once I receive your message, I’ll reach out to schedule a free remote meeting where we can discuss your goals in detail. This will allow me to understand your needs and provide you with a personalized quote.</p>
           </div>
 
           <div class="social-icons">
