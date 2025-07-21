@@ -16,7 +16,7 @@ document.querySelectorAll(".open-modal").forEach(el => {
       import("./modules/Modal")
         .then(x => {
           modal = new x.default()
-          setTimeout(() => modal.openModal(), 20)
+          setTimeout(() => modal.openModal(), 50)
         })
         .catch(() => console.log("There was a problem. Please try again."))
     } else {
